@@ -1,5 +1,6 @@
 <%= form_with model: book, local: true do |form| %>
-  <div class="form-group">
+    <%= render "shared/errors", obj: book %>
+    <div class="form-group">
     <%= form.label :title %>
     <%= form.text_field :title, class: "form-control" %>
   </div>
